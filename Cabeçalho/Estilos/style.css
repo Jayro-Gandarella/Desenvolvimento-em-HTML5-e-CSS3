@@ -16,6 +16,20 @@
     --cor8:#000000;
 }
 
+/*  paleta roxa 
+:root {
+    --cor0:#ffffff;
+    --cor1:#ffd6ff;
+    --cor2:#fcc4fc;
+    --cor3:#ffafff;
+    --cor4:#ff99ff;
+    --cor5:#ff77ff;
+    --cor6:#c430c4;
+    --cor7:#8a158a;
+    --cor8:#000000;
+} 
+*/
+
 #cabecalho {
     display: flex;
     align-items: center;
