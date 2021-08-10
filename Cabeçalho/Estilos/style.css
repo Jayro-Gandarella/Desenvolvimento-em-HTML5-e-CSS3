@@ -1,0 +1,145 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+:root { /* paleta azul */
+    --cor0:#ffffff;
+    --cor1:#d7eff5;
+    --cor2:#b2e3f0;
+    --cor3:#84d8f0;
+    --cor4:#49c5e7;
+    --cor5:#03acdb;
+    --cor6:#0086ac;
+    --cor7:#01556d;
+    --cor8:#000000;
+}
+
+#cabecalho {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    min-width: 320px;
+    height: 100px;
+    background-color:  var(--cor2);
+}
+
+#logo {
+    margin: 0px 15px 0px 15px;
+}
+
+#menu-principal {
+    margin: 15px;
+}
+
+#menu-principal > a {
+    text-decoration: none;
+    margin-right: 10px;
+    color: var(--cor8);
+}
+
+#menu-principal > a:hover {
+    background-color: var(--cor7);
+    border-radius: 5px;
+    color: var(--cor0);
+    padding: 5px;
+    margin-right: 0px;
+}
+
+#menu-hamburguer {
+    margin-right: 40px;
+    display: none;
+}
+
+#checkbox-menu {
+    position: absolute;
+    opacity: 0%; 
+}
+
+#menu-hamburguer label {
+    cursor: pointer;
+    position: relative;
+    height: 22px;
+    width: 25px;
+}
+
+#menu-hamburguer label span {
+    position: absolute;
+    height: 3px;
+    width: 100%;
+    border-radius: 30px;
+    background-color: var(--cor7);
+    transition: 0.25s ease-in-out;
+}
+
+#menu-hamburguer label span:nth-child(1) {
+    top: 0px;
+}
+
+#menu-hamburguer label span:nth-child(2) {
+    top: 8px;
+}
+
+#menu-hamburguer label span:nth-child(3) {
+    top: 16px;
+}
+
+#checkbox-menu:checked + label span:nth-child(1) {
+    transform: rotate(-45deg);
+    top: 8px;
+}
+
+#checkbox-menu:checked + label span:nth-child(2) {
+    opacity: 0;
+}
+
+#checkbox-menu:checked + label span:nth-child(3) {
+    transform: rotate(45deg);
+    top: 8px;
+}
+
+@media screen and (max-width: 508px) { 
+    #cabecalho {
+        display: block; 
+    }
+
+    #logo {
+        text-align: center;
+    }
+
+    #logo > h1 {
+        padding-top: 15px;
+    }
+
+    #menu-principal {
+        text-align: center;
+    }
+}
+
+@media screen and (max-width: 400px) { 
+    #cabecalho {
+        display: flex; 
+    }
+
+    #logo {
+        text-align: left;
+    }
+
+    #logo h1 {
+        padding: 0px;
+    }
+
+    #menu-principal {
+        display: none;
+    }
+
+    #cabecalho {
+        height: 65px;
+    }
+
+    #menu-hamburguer {
+        display: flex;
+        text-align: right;
+    }
+}
