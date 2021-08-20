@@ -1,0 +1,67 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    font-family: Arial, Helvetica, sans-serif;
+    text-decoration: none;
+    list-style: none;
+}
+
+:root { /* paleta azul */
+    --cor0:#ffffff;
+    --cor1:#d7eff5;
+    --cor2:#b2e3f0;
+    --cor3:#84d8f0;
+    --cor4:#49c5e7;
+    --cor5:#03acdb;
+    --cor6:#0086ac;
+    --cor7:#01556d;
+    --cor8:#000000;
+}
+
+h1 {
+    text-align: center;
+    color:  var(--cor7);
+    margin: 15px;
+}
+
+button {
+    font: inherit;
+    cursor: pointer;
+}
+
+#botoes {
+    display: flex;
+    justify-content: center;
+    margin: auto;
+    width: 600px;
+    height: 70px;
+    background-color: var(--cor2);
+}
+
+.botao > a {
+    color: var(--cor0);
+}
+
+#botao-aref {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.botao {
+    width: 200px;
+    height: 40px;
+    margin: 15px;
+    background:var(--cor5);
+    color: var(--cor0);
+    border: 0px;
+    text-shadow: 1px 1px 1px rgba(0,0,0,0.5);
+    border-radius: 20px;
+    box-shadow: 1px 1px 0px 1px var(--cor7);
+    transition: box-shadow 0.3s ease,transform 0.3s ease;
+}
+
+.botao:active {
+    box-shadow: 0 0 0 0 var(--cor7), inset 3px 3px 3px var(--cor7);
+    transform: translate(3px,3px);
+}
