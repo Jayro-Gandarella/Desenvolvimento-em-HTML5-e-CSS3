@@ -9,6 +9,7 @@ Neste repositório teremos vários mini projetos contendo técnicas diversas no 
 * CSS3
    *  Menu responsivo
    *  Animação de botões para menu responsivo
+   *  Estilização para botões com CSS3
    
 Um grande abraço a todos. 
 
