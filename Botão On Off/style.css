@@ -1,0 +1,70 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    font-family: Arial, Helvetica, sans-serif;
+    text-decoration: none;
+    list-style: none;
+}
+
+:root { /* paleta azul */
+    --cor0:#ffffff;
+    --cor1:#d7eff5;
+    --cor2:#b2e3f0;
+    --cor3:#84d8f0;
+    --cor4:#49c5e7;
+    --cor5:#03acdb;
+    --cor6:#0086ac;
+    --cor7:#01556d;
+    --cor8:#000000;
+}
+
+main {
+    text-align: center;
+}
+h1 {
+    text-align: center;
+    margin: 20px;
+    color: var(--cor7);
+}
+#liga-desliga {
+    display: none;
+}
+
+.liga-desliga-botao {
+    display: inline-block;
+    vertical-align: middle;
+    position: relative;
+    cursor: pointer;
+}
+
+.liga-desliga-botao::before,.liga-desliga-botao::after {
+    content: '';
+    transition: all 0.2s ease;
+}
+
+.liga-desliga-botao::before {
+    display: inline-block;
+    width: 40px;
+    height: 20px;
+    background-color: red;
+    border-radius: 10px;
+}
+
+.liga-desliga-botao::after {
+    position: absolute;
+    top: 1px;
+    left: 1px;
+    width: 18px;
+    height: 18px;
+    background-color: rgba(231, 231, 231, 0.678);
+    border-radius: 100%;
+}
+
+.liga-desliga-checkbox:checked + .liga-desliga-botao::before {
+    background-color: green;
+}
+
+.liga-desliga-checkbox:checked + .liga-desliga-botao::after {
+    left: 21px;
+}
+
