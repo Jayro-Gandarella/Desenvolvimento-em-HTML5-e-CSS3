@@ -4,11 +4,11 @@ Neste repositório teremos vários mini projetos contendo técnicas diversas no 
 ## Assuntos abordados
 * HTML5
    * Estrutura de marcação 'tags'
-   * Utilização semântica sempre
+   * Utilização semântica
    
 * CSS3
    *  Menu responsivo
-   *  Animação de botões para menu recursivo
+   *  Animação de botões para menu responsivo
    
 Um grande abraço a todos. 
 
